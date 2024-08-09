@@ -1,0 +1,3 @@
+../Drivers/DHT11/mk_dht11.c:18:6:init_dht11	24	static
+../Drivers/DHT11/mk_dht11.c:29:6:set_dht11_gpio_mode	40	static
+../Drivers/DHT11/mk_dht11.c:55:9:readDHT11	88	static,ignoring_inline_asm
