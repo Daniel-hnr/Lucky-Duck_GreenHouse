@@ -375,11 +375,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
     if (GPIO_Pin == btn2_Pin) {
         state = (state == work_state ? menu_state : work_state);
         ssd1306_Fill(Black);    // Clear the screen
-        ssd1306_SetCursor(0, 0);
-        ssd1306_WriteString("loading...", Font_7x10, White);
         ssd1306_UpdateScreen();
-        HAL_Delay(1000);
-
+        HAL_Delay(100);
         if (state == menu_state) {
             menu_show();
         } else if (state == work_state) {
