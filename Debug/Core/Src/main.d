@@ -36,8 +36,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  /home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306_fonts.h \
  /home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306.h \
  ../Core/Inc/sensors.h ../Core/Inc/main.h \
- /home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/DHT11/mk_dht11.h \
- ../Core/Inc/btn.h
+ /home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/DHT11/mk_dht11.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -78,4 +77,3 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/sensors.h:
 ../Core/Inc/main.h:
 /home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/DHT11/mk_dht11.h:
-../Core/Inc/btn.h:

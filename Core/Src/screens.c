@@ -38,8 +38,6 @@ void main_show() {
 	sprintf(menu, "fans:%-2d", 18);
 	ssd1306_WriteString(menu, Font_7x10, White);
 	HAL_Delay(10);
-	if (state == work_state)
-		ssd1306_UpdateScreen();
 }
 void menu_show() {
 	if(state == menu_state)
@@ -53,8 +51,6 @@ void menu_show() {
 			sprintf(menu, "val:%-3d|v:%-3d", dht.temperature, temp.set_val);
 			ssd1306_SetCursor(0, 14);
 			ssd1306_WriteString(menu, Font_7x10, White);
-			if (state == menu_state)
-				ssd1306_UpdateScreen();
 
 			if (HAL_GPIO_ReadPin(btn1_GPIO_Port, btn1_Pin) == false) {
 				temp.set_val -= 1;
@@ -73,8 +69,6 @@ void menu_show() {
 			sprintf(menu, "val:%-3d|v:%-3d", get_light(), light.set_val);
 			ssd1306_SetCursor(0, 14);
 			ssd1306_WriteString(menu, Font_7x10, White);
-			if (state == menu_state)
-				ssd1306_UpdateScreen();
 
 			if (HAL_GPIO_ReadPin(btn1_GPIO_Port, btn1_Pin) == false) {
 				light.set_val -= 1;
