@@ -33,7 +33,7 @@
 /* USER CODE BEGIN PTD */
 struct info {
 	char infoName[18];
-	int set_val;
+	int set_val_min,set_val_max;
 };
 /* USER CODE END PTD */
 
@@ -61,8 +61,8 @@ bool menu_f = false;
 dht11_t dht;
 char state = work_state;
 int set_l = 0, set_temp = 0;
-struct info temp = { "temp sensor", 25 };
-struct info light = { "light sensor", 15 };
+struct info temp = { "temp sensor", 24 , 25};
+struct info light = { "light sensor", 15 , 90};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -131,9 +131,9 @@ int main(void) {
 			} else {
 				flag_t = 0;
 				main_show();
-				if (dht.temperature > temp.set_val) {
+				if (dht.temperature > temp.set_val_max) {
 					HAL_GPIO_WritePin(fan_GPIO_Port, fan_Pin, 1);
-				} else if (dht.temperature < temp.set_val) {
+				} else if (dht.temperature < temp.set_val_min || dht.temperature == temp.set_val_min) {
 					HAL_GPIO_WritePin(fan_GPIO_Port, fan_Pin, 0);
 				}
 			}
@@ -381,8 +381,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
             menu_show();
         } else if (state == work_state) {
             main_show();
+            flag_t = 10;
         }
-        flag_t = 10;
+        HAL_Delay(100);
         ssd1306_UpdateScreen();  // Update the screen once after drawing
         __HAL_GPIO_EXTI_CLEAR_IT(GPIO_Pin);
     }
