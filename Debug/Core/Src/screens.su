@@ -1,2 +1,2 @@
-../Core/Src/screens.c:25:6:main_show	24	static
-../Core/Src/screens.c:43:6:menu_show	16	static
+../Core/Src/screens.c:27:6:main_show	48	static
+../Core/Src/screens.c:47:6:menu_show	16	static

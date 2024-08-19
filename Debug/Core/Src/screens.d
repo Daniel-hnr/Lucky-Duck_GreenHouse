@@ -29,14 +29,17 @@ Core/Src/screens.o: ../Core/Src/screens.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
- /home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306.h \
- /home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306_conf.h \
- /home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306_fonts.h \
- /home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306.h \
+ /home/james-web/STM32CubeIDE/workspace_1.16.0/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306.h \
+ /home/james-web/STM32CubeIDE/workspace_1.16.0/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306_conf.h \
+ /home/james-web/STM32CubeIDE/workspace_1.16.0/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306_fonts.h \
+ /home/james-web/STM32CubeIDE/workspace_1.16.0/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306.h \
  ../Core/Inc/sensors.h ../Core/Inc/main.h \
- /home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/DHT11/mk_dht11.h
+ /home/james-web/STM32CubeIDE/workspace_1.16.0/Lucky-Duck_GreenHouse/Drivers/DHT11/mk_dht11.h \
+ ../Core/Inc/time.h ../Core/Inc/sensors.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -68,12 +71,16 @@ Core/Src/screens.o: ../Core/Src/screens.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
-/home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306.h:
-/home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306_conf.h:
-/home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306_fonts.h:
-/home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306.h:
+/home/james-web/STM32CubeIDE/workspace_1.16.0/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306.h:
+/home/james-web/STM32CubeIDE/workspace_1.16.0/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306_conf.h:
+/home/james-web/STM32CubeIDE/workspace_1.16.0/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306_fonts.h:
+/home/james-web/STM32CubeIDE/workspace_1.16.0/Lucky-Duck_GreenHouse/Drivers/SSD1306/ssd1306.h:
 ../Core/Inc/sensors.h:
 ../Core/Inc/main.h:
-/home/jamse-web/Code/Lucky-Duck_GreenHouse/Drivers/DHT11/mk_dht11.h:
+/home/james-web/STM32CubeIDE/workspace_1.16.0/Lucky-Duck_GreenHouse/Drivers/DHT11/mk_dht11.h:
+../Core/Inc/time.h:
+../Core/Inc/sensors.h:

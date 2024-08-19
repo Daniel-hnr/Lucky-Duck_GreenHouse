@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "sensors.h"
+#include "time.h"
 
 #define work_state 0
 #define menu_state 1
@@ -21,6 +22,7 @@ extern struct info temp;
 extern struct info light;
 extern char state;
 
+
 uint8_t page = 0;
 void main_show() {
 	get_temp_humidity();
@@ -35,8 +37,10 @@ void main_show() {
 	sprintf(menu, "humidity:%-3d", dht.humidty);
 	ssd1306_WriteString(menu, Font_7x10, White);
 	menu[0] = '\0';
-	ssd1306_SetCursor(0, 21);
-	sprintf(menu, "fans:%-2d", 18);
+	ssd1306_SetCursor(0, 22);
+	RTC_TimeTypeDef sTime = {0} ;
+	sTime = get_time();
+	sprintf(menu, "%2d:%2d:%2d", sTime.Hours,sTime.Minutes,sTime.Seconds);
 	ssd1306_WriteString(menu, Font_7x10, White);
 	HAL_Delay(10);
 }
